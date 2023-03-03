@@ -28,7 +28,7 @@ function App () {
             <div
               style={{
                 textAlign: 'center',
-                marginTop: 200
+                // marginTop: 200
               }}
             >
               loading...

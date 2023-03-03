@@ -2,28 +2,34 @@ import './index.scss'
 import { Layout, Col, Row } from 'antd'
 import HeadBar from '../../components/HeadBar'
 import VideoPicker from '../../components/VideoPicker'
+import MusicPicker from '../../components/MusicPicker'
+import VideoPlayer from '../../components/VideoPlayer'
+import Brand from '../../components/Brand'
 const { Header, Footer, Sider, Content } = Layout
 
 //home组件
 const Home = () => {
   return (
     <div className="container">
-      <Header className='header'><HeadBar /></Header>
+      {/* <Header className='header'><HeadBar /></Header> */}
       <Content>
-        <Row align={"center"}>
-          <Col md={"24"} lg={"22"} xl={"22"}>
-            <Row style={{ background: "white", height: "100vh" }} align={"center"}>
-              <Col md={"4"} lg={"4"} xl={"4"}>
-                <VideoPicker />
-              </Col>
-              <Col md={"16"} lg={"16"} xl={"16"}>
-                <br />
-              </Col>
-              <Col md={"4"} lg={"4"} xl={"4"}>
-                <br />
-              </Col>
+        <Row align={"center"} justify={"center"} wrap={false}>
+
+          <Col span={4}>
+            <Row>
+              <Brand />
+            </Row>
+            <Row>
+              <VideoPicker />
             </Row>
           </Col>
+          <Col span={14}>
+            <VideoPlayer />
+          </Col>
+          <Col span={4}>
+            <MusicPicker />
+          </Col>
+
         </Row>
       </Content>
       <Footer></Footer>

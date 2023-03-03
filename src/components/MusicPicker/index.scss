@@ -1,7 +1,8 @@
 $theme-color: #ff1493;
 
-.video-picker-container {
+.music-box {
   height: 90vh;
+
   border: 1px solid $theme-color;
   border-radius: 8px;
   color: $theme-color;
@@ -9,6 +10,6 @@ $theme-color: #ff1493;
   // padding: 10px;
 }
 
-.video-picker-divider {
-  // background-color: $theme-color;
+.music-img {
+  border-radius: 8px;
 }
